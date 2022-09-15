@@ -1,7 +1,7 @@
 # PyAnagram
 ### Checador Avançado de Anagramas em Python
 
-<p align=center> Funcionalidades </p>
+# <p align=center> Funcionalidades </p>
 
 ## Acurácia Limiar
 > **Sistema de Acurácia** <br>
