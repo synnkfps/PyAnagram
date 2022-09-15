@@ -14,4 +14,5 @@ Quanto maior a string e mais testes o usuário fazer: maior a acurácia de teste
 Quanto maior a string e menos testes o usuário fazer: menor a chance de exibir resultados fieis </h4>
 
 <h3> Calculo *temporário* de uma Acurácia Limiar recomendada: </h3>
-`possibilidades/testes*len(string)*10`
+```py
+possibilidades/testes*len(string)*10```
