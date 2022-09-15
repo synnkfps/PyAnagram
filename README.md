@@ -15,4 +15,5 @@ Quanto maior a string e menos testes o usuário fazer: menor a chance de exibir 
 
 <h3> Calculo *temporário* de uma Acurácia Limiar recomendada: </h3> <br>
 ```py
-possibilidades/testes*len(string)*10```
+possibilidades/testes*len(string)*10
+```
