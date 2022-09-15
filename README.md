@@ -3,7 +3,7 @@
 
 # Funcionalidades
 ## Acurácia Limiar
->**Sistema de Acurácia** <br>
+> **Sistema de Acurácia** <br>
 >> Quanto menor a string, maior a possibilidade de gerar duplicados <br>
 >> Também depende da quantidade de testes que o usuário fazer <br>
 
