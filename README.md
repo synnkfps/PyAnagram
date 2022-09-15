@@ -5,7 +5,7 @@
 
 ## Acurácia Limiar
 > **Sistema de Acurácia** <br>
-<h2> Quanto menor a string, maior a possibilidade de gerar duplicados </h2>
+<h5> Quanto menor a string, maior a possibilidade de gerar duplicados </h2>
 >> Também depende da quantidade de testes que o usuário fazer <br>
 
 > **Resumo:**  <br>
