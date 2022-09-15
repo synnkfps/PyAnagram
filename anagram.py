@@ -127,13 +127,15 @@ print(f'Diferença Limiar entre Acurácias: {acuracia_recomendada-acuracia_limia
 
 # Regular Acurácia
 def regular():
+    global acuracia_limiar
+    
     op = input('\n\tDigite "a" para regular sua acurácia para a recomendada\n\tDigite "n" para colocar uma nova acurácia\n\tDigite "k" ou deixe em branco para manter a acurácia atual\n\t> ')
     if op == 'a':
         acuracia_limiar = int(acuracia_recomendada)
     elif op == 'n':
         acuracia_limiar = int(input('Acurácia Limiar: '))
     elif op == 'k' or op == '':
-        acuracia_limiar = acuracia_limiar
+        pass
     else:
         print('não reconheci esta opção')
         regular()
