@@ -83,21 +83,6 @@ else:
 
 print('Possibilidades: ', possibilidades)
 
-# Com repetidos:
-# 5! / x! * y!
-# 5*4*3*2*1 / (2*1 * 3*2*1)
-
-# Sistema de acurácia
-# Quanto menor a string, maior a possibilidade de gerar duplicados
-# Também depende da quantidade de testes que o usuário fazer
-#
-# Resumo:
-#   quanto menor a string e mais testes o usuário fazer: maior a chance de duplicados
-#   quanto menor a string e menos testes o usuário fazer: uma acurácia melhor 
-#
-#   quanto maior a string e mais testes o usuário fazer: maior a acurácia de testes
-#   quanto maior a string e menos testes o usuário fazer: menor a chance de exibir resultados fieis
-
 acuracia_limiar = 125161 # MUITO IMPORTANTE PARA RESULTADOS REAIS
 # acuracia_limiar = int(input('Acurácia Limiar: '))
 
@@ -148,9 +133,23 @@ def programa():
 
 testes = int(input('Quantos testes deseja fazer: '))
 acuracia_recomendada = possibilidades/testes*len(string)*10
-print(f'Acurácia Limiar recomendada: {acuracia_recomendada}')
+print(f'\nAcurácia Limiar recomendada: {acuracia_recomendada}')
 print(f'Acurácia Limiar em uso: {acuracia_limiar}')
 print(f'Diferença Limiar entre Acurácias: {acuracia_recomendada-acuracia_limiar}')
+
+# Regular Acurácia
+def regular():
+    op = input('\n\tDigite "a" para regular sua acurácia para a recomendada\n\tDigite "n" para colocar uma nova acurácia\n\tDigite "k" ou deixe em branco para manter a acurácia atual\n\t> ')
+    if op == 'a':
+        acuracia_limiar = int(acuracia_recomendada)
+    elif op == 'n':
+        acuracia_limiar = int(input('Acurácia Limiar: '))
+    elif op == 'k' or op == '':
+        acuracia_limiar = acuracia_limiar
+    else:
+        print('não reconheci esta opção')
+        regular()
+regular()
 
 for i in range(testes):
     out = programa()
