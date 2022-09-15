@@ -7,7 +7,7 @@
 > **Sistema de Acurácia** <br>
 <h4> Quanto menor a string, maior a possibilidade de gerar duplicados <br> Também depende da quantidade de testes que o usuário fazer</h4>
 
-> **Resumo:**  <br>
+## Resumo:
 >> Quanto menor a string e mais testes o usuário fazer: maior a chance de duplicados <br>
 >> Quanto menor a string e menos testes o usuário fazer: uma acurácia melhor <br>
 >> Quanto maior a string e mais testes o usuário fazer: maior a acurácia de testes <br>
