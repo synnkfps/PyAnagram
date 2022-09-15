@@ -1,14 +1,7 @@
 import random 
-
 string = input("Digite uma string: ")
 
-# Printar as possibilidades
-print_it = False 
-
-#testes = int(input('Quantos testes deseja fazer: '))
-
 anagramas_finais = []
-#retornar = False 
 
 # Sem repetidos
 # ! (fatorial) = 7! = 7*6*5*4*3*2*1 = 5040 (exemplo) 
@@ -40,6 +33,7 @@ def sequenciar(num):
 sum = []
 ha_repeticao = False
 
+# Verificar repetidos e contar quantos tem de repetidos
 for i in string:
     if string.count(i) > 1: 
         ha_repeticao = True
@@ -50,19 +44,16 @@ for i in string:
 
 p = []
 
+# Fatoriar a sequencia de repetidos (repetidos fica por exemplo 'e': 2)
+# 2*1
 for i in repetidos:
     p.append(fatoriar(sequenciar(repetidos[i])))
 
 div = '(' + ' * '.join(p) + ')'
 
+# Colocar * entre todos e inverter
 summarize = '*'.join(sum)
 summarize = summarize[::-1]
-
-# bug:
-#   se o número/string for 10, ou 13, ele vai contar como 01 ou 31, e o python não aceita 
-# correção:
-# Percorrer tudo no summarize, a cada '*' atual, colocar o número anterior
-# 8*9*10 : [8, 9, 10]
 
 corrigir = []
 # summarize.split('*') separa tudo que está entre os '*'
@@ -124,9 +115,6 @@ def programa():
     for i in possiveis:
         s.append(i)
         count += 1
-
-    if print_it:
-        print(string, f'tem {count} anagramas possíveis!')
 
     # retornar todas as possibilidades
     return s
