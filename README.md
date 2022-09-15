@@ -8,7 +8,7 @@
 >> Também depende da quantidade de testes que o usuário fazer <br>
 
 > **Resumo:**  <br>
->> quanto menor a string e mais testes o usuário fazer: maior a chance de duplicados
->> quanto menor a string e menos testes o usuário fazer: uma acurácia melhor 
->> quanto maior a string e mais testes o usuário fazer: maior a acurácia de testes
->> quanto maior a string e menos testes o usuário fazer: menor a chance de exibir resultados fieis
+>> quanto menor a string e mais testes o usuário fazer: maior a chance de duplicados <br>
+>> quanto menor a string e menos testes o usuário fazer: uma acurácia melhor <br>
+>> quanto maior a string e mais testes o usuário fazer: maior a acurácia de testes <br>
+>> quanto maior a string e menos testes o usuário fazer: menor a chance de exibir resultados fieis <br>
