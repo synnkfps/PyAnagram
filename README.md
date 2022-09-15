@@ -2,6 +2,7 @@
 ### Checador Avançado de Anagramas em Python
 
 <div style="align: center;"> Funcionalidades </div>
+
 ## Acurácia Limiar
 > **Sistema de Acurácia** <br>
 >> Quanto menor a string, maior a possibilidade de gerar duplicados <br>
