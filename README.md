@@ -1,5 +1,5 @@
-# PyAnagram
-### Checador Avançado de Anagramas em Python
+# <p align=center> PyAnagram </p>
+### <p align=center> Checador Avançado de Anagramas em Python </p>
 
 # <p align=center> Funcionalidades </p>
 
