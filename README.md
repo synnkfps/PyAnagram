@@ -17,3 +17,7 @@ Quanto maior a string e menos testes o usuário fazer: menor a chance de exibir 
 ```py
 possibilidades/testes*len(string)*10
 ```
+
+Após rodar o programa com uma acurácia "desregulada" o programa irá te avisar a acurácia recomendada para aquela string com base nas possibilidades e na quantidade de testes.
+
+
