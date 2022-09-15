@@ -98,7 +98,7 @@ print('Possibilidades: ', possibilidades)
 #   quanto maior a string e mais testes o usuário fazer: maior a acurácia de testes
 #   quanto maior a string e menos testes o usuário fazer: menor a chance de exibir resultados fieis
 
-acuracia_limiar = 432 # MUITO IMPORTANTE PARA RESULTADOS REAIS
+acuracia_limiar = 125161 # MUITO IMPORTANTE PARA RESULTADOS REAIS
 # acuracia_limiar = int(input('Acurácia Limiar: '))
 
 # Agora o programa começa...
@@ -148,12 +148,17 @@ def programa():
 
 testes = int(input('Quantos testes deseja fazer: '))
 acuracia_recomendada = possibilidades/testes*len(string)*10
-print(f'Acurácia recomendada: {acuracia_recomendada}')
+print(f'Acurácia Limiar recomendada: {acuracia_recomendada}')
+print(f'Acurácia Limiar em uso: {acuracia_limiar}')
+print(f'Diferença Limiar entre Acurácias: {acuracia_recomendada-acuracia_limiar}')
 
 for i in range(testes):
     out = programa()
     if len(out) == possibilidades:
         print(out)
+        print(f'Tamanho: {len(out)}')
+        if len(out) == possibilidades:
+            print('Match PERFEITO')
         break 
 else:
     print(f'Não foi possível achar a quantidade de anagramas possíveis\nRevise seu valor de acurácia ou a quantidade de testes a ser feitos')
