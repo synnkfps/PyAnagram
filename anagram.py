@@ -74,7 +74,7 @@ else:
 
 print('Possibilidades: ', possibilidades)
 
-acuracia_limiar = 125161 # MUITO IMPORTANTE PARA RESULTADOS REAIS
+acuracia_limiar = 200 # MUITO IMPORTANTE PARA RESULTADOS REAIS
 # acuracia_limiar = int(input('Acurácia Limiar: '))
 
 # Agora o programa começa...
@@ -128,7 +128,7 @@ print(f'Diferença Limiar entre Acurácias: {acuracia_recomendada-acuracia_limia
 # Regular Acurácia
 def regular():
     global acuracia_limiar
-    
+
     op = input('\n\tDigite "a" para regular sua acurácia para a recomendada\n\tDigite "n" para colocar uma nova acurácia\n\tDigite "k" ou deixe em branco para manter a acurácia atual\n\t> ')
     if op == 'a':
         acuracia_limiar = int(acuracia_recomendada)
