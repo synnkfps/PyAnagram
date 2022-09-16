@@ -117,10 +117,12 @@ def programa():
         count += 1
 
     # retornar todas as possibilidades
+    possiveis.clear()
+    count = 0
     return s
 
 testes = int(input('Quantos testes deseja fazer: '))
-acuracia_recomendada = possibilidades/testes*len(string)*10
+acuracia_recomendada = possibilidades/testes*len(string)*5
 print(f'\nAcurácia Limiar recomendada: {acuracia_recomendada}')
 print(f'Acurácia Limiar em uso: {acuracia_limiar}')
 print(f'Diferença Limiar entre Acurácias: {acuracia_recomendada-acuracia_limiar}')
