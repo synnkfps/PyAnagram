@@ -5,13 +5,13 @@
 
 ## Acurácia Limiar
 ### **Sistema de Acurácia** 
-<h4> Quanto menor a string, maior a possibilidade de gerar duplicados <br> Também depende da quantidade de testes que o usuário fazer </h4>
+<h4> Quanto menor a string, maior a possibilidade de gerar duplicados <br> <i>Também depende da quantidade de testes que o usuário fazer</i> </h4>
 
 ### Resumo:
-<h4> Quanto menor a string e mais testes o usuário fazer: maior a chance de duplicados <br>
-Quanto menor a string e menos testes o usuário fazer: uma acurácia melhor <br>
-Quanto maior a string e mais testes o usuário fazer: maior a acurácia de testes <br>
-Quanto maior a string e menos testes o usuário fazer: menor a chance de exibir resultados fieis </h4>
+- Quanto menor a string e mais testes o usuário fazer: maior a chance de duplicados 
+- Quanto menor a string e menos testes o usuário fazer: uma acurácia melhor 
+- Quanto maior a string e mais testes o usuário fazer: maior a acurácia de testes
+- Quanto maior a string e menos testes o usuário fazer: menor a chance de exibir resultados fieis 
 
 ### Calculo *temporário* de uma Acurácia Limiar recomendada:
 ```py
